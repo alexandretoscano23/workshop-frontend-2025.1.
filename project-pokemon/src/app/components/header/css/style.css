@@ -1,0 +1,5 @@
+.header-bg{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 1.2rem;
+}

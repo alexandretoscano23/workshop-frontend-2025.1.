@@ -1,0 +1,33 @@
+.footer-bg{
+    background-color: var(--vermelho);
+    padding: 20px 2%;
+    color: var(--branco);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.link{
+    text-align: end;
+    font-size: 1.4rem;
+}
+
+.link span{
+    background-color: var(--verde);
+    color: var(--branco);
+    padding: 4px 15px;
+    border-radius: 10px;
+}
+
+.link span:hover{
+    background-color: var(--verde-escuro);
+    transition: 0.5s;
+    box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.459);
+}
+

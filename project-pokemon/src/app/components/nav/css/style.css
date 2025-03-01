@@ -1,0 +1,49 @@
+.ul-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0 2.5rem ;
+    color: var(--branco);
+    font-size: 2rem;
+    height: 80px;
+}
+
+.ul-nav li:hover{
+    color: var(--amarelo);
+    cursor: pointer;
+}
+
+.ul-nav li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--branco);
+    transition: width .3s;
+}
+
+.ul-nav li:hover::after{
+    width: 100%;
+}
+
+.linkInit{
+    background-color: var(--branco);
+    color: #111;
+    padding: 6px 20px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.349);
+    font-size: 1.2rem;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .ul-nav{
+        font-size: 1.5rem;
+    }
+    .ul-nav li:hover{
+       color: var(--branco);
+    }
+    .ul-nav li::after{
+        display: none;
+    }
+}

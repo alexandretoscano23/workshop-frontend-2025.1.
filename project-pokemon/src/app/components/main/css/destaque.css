@@ -1,0 +1,63 @@
+
+
+.destaque h1{
+    position: relative;
+    font-size: 2rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.container-form input{
+    position: relative;
+    width: 60%;
+    background-color: var(--azul);
+    padding: 10px 2%;
+    border-radius: 4px;
+    box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.233);
+}
+
+.container-form input::placeholder{
+    color: var(--branco);
+    font-size: 1.2rem;
+}
+
+
+.container-form input:focus{
+    outline: none;
+}
+
+.container-form button{
+    position: relative;
+    right: 4%;
+    padding: 0 10px;
+}
+
+/* responsivo */
+@media (max-width: 768px){
+    .container-form button{
+        right: 10%;
+    }
+}
+
