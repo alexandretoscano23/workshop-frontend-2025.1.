@@ -12,6 +12,7 @@ import Destaque from "./components/main/main";
 export default function Page(){
   return(
     <div>
+      
       <Header/>
       <Destaque />
       <Emphasis />

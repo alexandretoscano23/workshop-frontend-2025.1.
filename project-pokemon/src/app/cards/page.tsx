@@ -65,7 +65,7 @@ export default function Principal(){
             <h1>Cards</h1>
             {/* quando estiver carregando a busca */}
             {searchTerm && <p>Resultados para: {searchTerm}</p>} 
-            {loading ?  (<p>carregando...</p>) : pokemon.length === 1 ? (<p>não existe ou foi escrito incorretamente</p>): (
+            {loading ?  (<p>carregando...</p>) : pokemon.length === 0 ? (<p>não existe ou foi escrito incorretamente</p>) : (
             <div className="container-main">
             {pokemon.map((pokemon) => (
             <div key={pokemon.id} className="card">
