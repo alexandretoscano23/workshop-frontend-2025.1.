@@ -18,7 +18,6 @@ export default function Page(){
       <Emphasis />
 
      
-
       <Footer /> 
     </div>
 

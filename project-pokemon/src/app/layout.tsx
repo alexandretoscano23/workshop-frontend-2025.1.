@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pokemon",
+  title: "Pokémon",
   description: "Projeto Pokemon - Fábrica de Software",
 };
 
