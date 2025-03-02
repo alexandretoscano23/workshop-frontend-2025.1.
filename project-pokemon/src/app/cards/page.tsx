@@ -64,7 +64,7 @@ export default function Principal(){
             
             <h1>Cards</h1>
             {/* quando estiver carregando a busca */}
-            {searchTerm && <p>Resultados para: {searchTerm}</p>} 
+            {searchTerm && <p className="text-2xl">Resultados para: {searchTerm}</p>} 
             {loading ? 
              (
                 <div  className="cards-loading">
@@ -72,7 +72,18 @@ export default function Principal(){
                     <img src="/images/pokebola.webp" alt="imagem de pokebola" />
                 </div>
             ) :
-             pokemon.length === 0 ? (<p>não existe ou foi escrito incorretamente</p>) : (
+             pokemon.length === 0 ?  (
+                <div className="nao-encontrado">
+                    <div>
+                        <h3>não foi possível encontrar</h3>
+                        <p className="">Verifique se foi escrito corretamente</p>
+                    </div>
+                    <div>
+                        <img src="/images/picachu-triste.webp" alt="imagem pikachu triste" />
+                        </div>
+                </div>
+             
+            ) : (
             <div className="container-main">
             {pokemon.map((pokemon) => (
             <div key={pokemon.id} className="card">

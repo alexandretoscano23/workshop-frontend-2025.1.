@@ -64,6 +64,7 @@
     font-size: 1.3rem;
 }
 
+
 /* animação */
 
 @keyframes spin{
@@ -74,6 +75,28 @@
     100%{
         transform: rotate(360deg);
     }
+}
+
+/* não encontrado */
+.nao-encontrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nao-encontrado h3{
+    font-size: 1.2rem;
+}
+
+
+.nao-encontrado p{
+    font-size: 1rem;
+}
+
+.nao-encontrado img{
+    width: 150px;
+    height: 150px;
 }
 
 /* media */
