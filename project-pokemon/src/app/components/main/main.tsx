@@ -80,6 +80,10 @@ export default function Destaque(){
                         <img src="/images/arceus.png" alt="imagem do arceus" />
                     </SwiperSlide>
 
+                    <SwiperSlide>
+                        <img src="/images/dialga.png" alt="imagem do dialga" />
+                    </SwiperSlide>
+
                     </Swiper>
                 </section>
                 

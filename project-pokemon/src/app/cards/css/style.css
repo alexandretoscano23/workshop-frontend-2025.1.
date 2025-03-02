@@ -43,6 +43,38 @@
     font-size: 1.2rem;
 }
 
+/* pokebola girando ao loading */
+
+.cards-loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards-loading img{
+    width: 25px;
+    height: 25px;
+    animation: spin 1s infinite;
+    transition: ease-in-out 0.5s;
+}
+
+.cards-loading p{
+    font-size: 1.3rem;
+}
+
+/* animação */
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 /* media */
 @media (max-width: 768px){
     .card:hover{

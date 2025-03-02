@@ -29,7 +29,7 @@ export default function AbrirPacote(){
             const response = await fetch("https://api.pokemontcg.io/v2/cards/")
             const data = await response.json()
             const cards = data.data
-
+            //recebe um array de cards
             const randomCards: PokemonTask[] = []
             //6 cartas aleatórias
             for(let i = 0; i < 6; i++){
@@ -64,7 +64,7 @@ export default function AbrirPacote(){
                         <div>
                             {/* evitar que click mais de uma vez */}
                             <button onClick={getPokemon} disabled={loading}>
-                                {loading ? "carregando..." : "Abrir pacote"}
+                                {loading ? "Abrindo..." : "Abrir pacote"}
                             </button>
                         </div>
                     </div>
@@ -72,22 +72,25 @@ export default function AbrirPacote(){
                     <div className="cards-container">
                     {pokemon.map((card)=> (
                         <div key={card.id} className="cards">
-                            <div><img src={card.images.small} alt={card.name} /></div>
+                            <div>
+                                <img src={card.images.small} alt={card.name} />
+                            </div>
+
                             <br />
                             <hr />
                             <br />
+
                             <h1>{card.name}</h1>
                             <p>{card.types}</p>
                         </div>
                     ))}
-                </div>
-                </div>
 
-               
+                </div>
+                </div>
             </main>
            
            <footer className="footer-pacote">
-            <Footer />
+                <Footer />
            </footer>
         </div>
     )
