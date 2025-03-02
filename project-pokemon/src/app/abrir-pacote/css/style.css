@@ -33,18 +33,18 @@ button{
 /* cards */
 .cards-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 0 2rem;
+    gap: 4rem;
     margin-top: 2%;
-    margin-bottom: 2%;
-
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+   
 }
 
 .cards-container img{
-    max-width: 100%;
-    height: auto;
+    width: 250px;
+    height: 300px;
     display: block;
 }
 
@@ -70,6 +70,19 @@ button{
 .cards p{
     font-size: 1.2rem;
     color: var(--branco);
+}
+
+/* botão */
+.container-pacote button{
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.363);
+    
+}
+
+.container-pacote button:hover{
+    transition: ease-in-out 0.5s;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.616);
+    
+
 }
 
 /* responsivo */

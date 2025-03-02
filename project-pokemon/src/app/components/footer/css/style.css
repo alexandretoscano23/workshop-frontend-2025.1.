@@ -31,3 +31,15 @@
     box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.459);
 }
 
+/* media */
+@media(max-width: 500px){
+    .container-footer{
+        flex-direction: column;
+        padding: 10px 2%;
+    }
+
+    .link{
+        text-align: center;
+    }
+}
+
