@@ -75,11 +75,9 @@ export default function AbrirPacote(){
                             <div>
                                 <img src={card.images.small} alt={card.name} />
                             </div>
-
                             <br />
                             <hr />
                             <br />
-
                             <h1>{card.name}</h1>
                             <p>{card.types}</p>
                         </div>
