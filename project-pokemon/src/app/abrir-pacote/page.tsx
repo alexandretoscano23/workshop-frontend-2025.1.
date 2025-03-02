@@ -34,7 +34,7 @@ export default function AbrirPacote(){
             //6 cartas aleatórias
             for(let i = 0; i < 6; i++){
                 //sortear um número aleatório
-                const index = Math.floor(Math.random() * cards.length)
+                let index = Math.floor(Math.random() * cards.length)
                 //adicionar a carta
                 randomCards.push(cards[index])
             }
