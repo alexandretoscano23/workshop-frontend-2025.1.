@@ -56,7 +56,7 @@
 .cards-loading img{
     width: 25px;
     height: 25px;
-    animation: spin 1s infinite;
+    animation: spin 2s infinite;
     transition: ease-in-out 0.5s;
 }
 
